@@ -34,22 +34,22 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`flex flex-row justify-around whitespace-nowrap bg-bgBlue p-4  font-roboto text-white lg:hidden ${
+        className={`flex flex-row justify-around gap-2 whitespace-nowrap bg-bgBlue p-4  font-roboto text-white lg:hidden ${
           hidden === true ? 'hidden' : ''
         } transition  ease-in-out `}
       >
-        <div className="cursor-pointer text-sm  hover:text-blueGreen">
-          <span className="text-blueGreen">01.</span>Home
-        </div>
-        <div className="cursor-pointer text-sm hover:text-blueGreen">
-          <span className="text-blueGreen">02.</span>About
-        </div>
-        <div className="cursor-pointer text-sm hover:text-blueGreen">
-          <span className="text-blueGreen">03.</span>Works
-        </div>
-        <div className="cursor-pointer text-sm hover:text-blueGreen">
-          <span className="text-blueGreen">04.</span>Contact
-        </div>
+        {navItems.map((item, index) => {
+          return (
+            <div className="cursor-pointer text-sm  hover:text-blueGreen">
+              <a href={item.url}>
+                <span className="text-blueGreen">
+                  0{index + 1}.<br />{' '}
+                </span>{' '}
+                {item.name}
+              </a>
+            </div>
+          )
+        })}
       </div>
     </>
   )

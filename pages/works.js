@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectCard from '../widgets/project'
 import { Projects } from '../widgets/constants'
+
 function Works() {
   return (
     <div className=" h-full bg-bgBlue px-40 font-roboto text-white ph:p-6 ph:text-sm">
@@ -34,7 +35,7 @@ function Works() {
         <div className="h-3  w-3 rounded-full  border border-green-400 bg-green-400 " />{' '}
         &nbsp; Done
       </div>
-      <div className="my-4 grid grid-cols-4 gap-7 py-12">
+      <div className="my-4 grid grid-cols-4 ph:grid-cols-1 md:grid-cols-2 gap-7 py-12">
         {Projects.map((item) => (
           <ProjectCard
             name={item.name}

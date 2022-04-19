@@ -33,10 +33,10 @@ function projectCard({ status, name, desc, tech, link, code }) {
       <div className=" px-6 py-2">
         <p className="py-2 text-lg font-medium text-blueGreen">{name}</p>
         <p className="py-4 text-sm">{desc}</p>
-        <div className="flex flex-row gap-5 py-2 ">
+        <div className="flex flex-row flex-wrap py-2 ">
           <span>TechStack:</span>
           {tech.map((item) => (
-            <span className="text-sm text-blueGreen ">{item}</span>
+            <span className="text-sm text-blueGreen mx-1  ">{item}</span>
           ))}
         </div>
         <div className="flex flex-row gap-5 py-2">
