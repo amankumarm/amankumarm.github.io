@@ -2,6 +2,26 @@
     margin:0;
     padding:0
 }
+header{
+    text-align: center;
+    font: 1em sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: large;
+    padding: 2rem 0rem;
+    /* font-style: ; */
+}
+.vercel{
+    font-size: bold ;
+    cursor: pointer;
+    border: 2px solid rebeccapurple;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0rem 1rem;
+}
+.vercel:hover{
+    text-decoration: underline;
+}
 body{
     overflow-x:hidden;
     height:100%;
@@ -12,6 +32,13 @@ body{
 }
 .def-pad{
     padding:1em 6em
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
 }
 #main1{
     background-color:#141628;
@@ -44,7 +71,8 @@ nav>span{
     align-items:center;
     height:100%;
     padding-top:.3em;
-    text-align:center
+    text-align:center;
+    cursor: pointer;
 }
 @media screen and (max-width:900px){
     .nav_item{
