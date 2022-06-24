@@ -19,6 +19,7 @@ module.exports = {
         bgBlue: '#061224',
         blueGreen: '#64ffda',
         sideline: '#47528f',
+        blueGreenDull: '#3ea58d',
       },
       spacing: {
         'minu-4': '-4rem',

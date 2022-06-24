@@ -10,9 +10,9 @@ function Navbar() {
   ]
   return (
     <>
-      <div className="tracking-md bg-bgBlue pt-2 text-center font-semibold text-white">
+      {/* <div className="tracking-md bg-bgBlue pt-2 text-center font-semibold text-white">
         Work In Progress
-      </div>
+      </div> */}
       <div className=" flex h-[10%] w-full flex-row items-center justify-between  bg-bgBlue  px-8">
         <Logo />
         <div className="flex flex-row gap-5 font-roboto text-white ph:hidden ">

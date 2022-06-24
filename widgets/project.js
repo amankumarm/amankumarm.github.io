@@ -26,7 +26,7 @@ function projectCard({ status, name, desc, tech, link, code }) {
   )
 
   return (
-    <div className="h-full w-full   rounded-md border-2 border-[#1e233f] p-0 pb-2 ">
+    <div className="h-full w-full   rounded-md border-2 border-[#1e233f] p-0 pb-2 hover:scale-110  hover:z-10 ease-out duration-300 bg-bgBlue " >
       <div className="flex items-center  justify-end  rounded-t-md bg-[#1e233f] p-3">
         {statusElement}
       </div>

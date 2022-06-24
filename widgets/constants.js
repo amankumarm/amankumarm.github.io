@@ -59,3 +59,59 @@ export const Projects = [
     link: 'https://algo-vizz.herokuapp.com/',
   },
 ]
+
+export const skills = [
+  ['Python', 1],
+  ['JavaScript', 1],
+  ['Markdown', 1],
+  ['React', 1],
+  ['Expressjs', 1],
+  ['Nextjs', 1],
+  ['AWS', 1],
+  ['Tailwind', 1],
+  ['C', 1],
+  ['CSS', 1],
+  ['Android', 0],
+  ['HTML', 1],
+  ['Nodejs', 1],
+  ['Mongodb', 1],
+  ['Django', 1],
+  ['Github', 1],
+  ['git', 1],
+  ['SQL', 1],
+  ['Linode', 0],
+]
+
+export const WorkExp = [
+  {
+    name: 'Justbooks.in',
+    start: 'January 2022',
+    end: 'May 2022',
+    position: 'Frontend Developer Intern',
+    description: 'I Revamped their website to a new one from scratch.',
+    work: [
+      { name: 'Old ', link: 'justbooks.in' },
+      {
+        name: 'New',
+        link: 'https://vercel.com/amankumarm/jb-test/7auqMV9mpSaoDWCSgTMHNVDFbVAr',
+      },
+    ],
+    stack: ['Nextjs', 'Tailwind', 'Zustand'],
+  },
+  {
+    name: 'PES Innovation Lab',
+    start: 'May 2022',
+    end: 'Aug 2022',
+    position: 'Full-stack  Intern',
+    description:
+      'Worked on a project that aims to visualize different Sorting, ML, and Graph Algorithms.',
+    work: [
+      {
+        name: 'Certificate', // remember to render this as innerhtml
+        link: 'https://drive.google.com/file/d/1fyoKKk1qC9DP8IVyRmLAjM0m-Fl1B29n/view',
+      },
+    ],
+
+    stack: ['React', 'Django'],
+  },
+]
