@@ -6,7 +6,7 @@ import RightSideBar from './right_sidebar'
 function Index(props) {
   return (
     <>
-      <div className=" h-screen w-full ">
+      <div className=" h-screen w-full ph:h-[90vh] ">
         <Navbar />
         <div className="absolute grid h-[90%] w-full grid-cols-12">
           <LeftSideBar />

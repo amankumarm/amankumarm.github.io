@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import Logo from '../../widgets/logo'
+import { useRouter } from 'next/router'
 function Navbar() {
-  const [hidden, sethidden] = useState(false)
+  const [hidden, sethidden] = useState(true)
   const navItems = [
     { name: 'Home', url: '/' },
     { name: 'About', url: '/about' },
     { name: 'Works', url: '/works' },
     { name: 'Contact', url: '/contact' },
   ]
+  const currentPath = navItems.find((x) => x.url === useRouter().asPath)
+
   return (
     <>
       {/* <div className="tracking-md bg-bgBlue pt-2 text-center font-semibold text-white">
@@ -18,8 +21,13 @@ function Navbar() {
         <div className="flex flex-row gap-5 font-roboto text-white ph:hidden ">
           {navItems.map((item, index) => {
             return (
-              <div className="cursor-pointer text-sm  hover:text-blueGreen">
-                <a href={item.url}>
+              <div className="cursor-pointer text-sm  ">
+                <a
+                  href={item.url}
+                  className={`hover:text-blueGreen ${
+                    useRouter().asPath === item.url ? 'text-blueGreen' : ''
+                  }`}
+                >
                   <span className="text-blueGreen">0{index + 1}. </span>{' '}
                   {item.name}
                 </a>
