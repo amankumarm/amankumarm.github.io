@@ -93,7 +93,7 @@ export const WorkExp = [
       { name: 'Old ', link: 'justbooks.in' },
       {
         name: 'New',
-        link: 'https://vercel.com/amankumarm/jb-test/7auqMV9mpSaoDWCSgTMHNVDFbVAr',
+        link: 'https://jb-test-one.vercel.app/',
       },
     ],
     stack: ['Nextjs', 'Tailwind', 'Zustand'],

@@ -72,6 +72,7 @@ function about() {
                 <a
                   href={i.link}
                   className="text-sm font-bold text-blueGreen underline"
+                  target="__blank"
                 >
                   {i.name}
                 </a>
