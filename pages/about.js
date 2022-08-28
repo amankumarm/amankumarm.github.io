@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import profile from '../public/assets/images/profile-pic.png'
 import { skills, WorkExp } from '../widgets/constants'
 function about() {
@@ -19,8 +20,8 @@ function about() {
   }
   return (
     <div className=" h-full bg-bgBlue px-32 pt-16 font-roboto ph:px-1">
-      <div className=" flex flex-row justify-around ph:flex-col ph:items-center">
-        <div className="w-1/2 ph:w-full ph:px-10 ">
+      <div className=" flex flex-row  justify-between ph:flex-col-reverse ph:items-center">
+        <div className="w-2/3 ph:w-full ph:px-10 ">
           <p className="py-6 font-nonoSans text-2xl font-bold  text-blueGreen">
             About Me
           </p>
@@ -32,23 +33,26 @@ function about() {
             years of practice and expanding my horizons.
           </p>
         </div>
-        <div className="w-1/2 px-6 ph:w-full ph:px-10 ">
-          <p className="py-6 font-nonoSans text-2xl font-bold  text-blueGreen">
-            Skills
-          </p>
-          <div className="flex flex-wrap">
-            {skills.map((item) => (
-              <span
-                className={`text-semibold m-1  border p-2 text-sm duration-300 ease-out hover:z-10 hover:scale-110 ${
-                  item[1] == 1
-                    ? 'border-blueGreen  text-blueGreen'
-                    : 'border-blueGreenDull  text-blueGreenDull'
-                } `}
-              >
-                {item[0]}
-              </span>
-            ))}
-          </div>
+        <div className="flex  w-1/3 items-center justify-center">
+          <img src="/assets/images/prof.jpg " className="w-2/3 rounded-full shadow-lg" />
+        </div>
+      </div>
+      <div className="ph:w-full ph:px-10 ">
+        <p className="py-6 font-nonoSans text-2xl font-bold  text-blueGreen">
+          Skills
+        </p>
+        <div className="flex flex-wrap">
+          {skills.map((item) => (
+            <span
+              className={`text-semibold m-1  border p-2 text-sm duration-300 ease-out hover:z-10 hover:scale-110 ${
+                item[1] == 1
+                  ? 'border-blueGreen  text-blueGreen'
+                  : 'border-blueGreenDull  text-blueGreenDull'
+              } `}
+            >
+              {item[0]}
+            </span>
+          ))}
         </div>
       </div>
       <div className="pt-10 ph:w-full ph:px-10 ">

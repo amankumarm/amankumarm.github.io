@@ -1,6 +1,6 @@
 // done - 1
 // in progress - 0
-// need to improve - 1
+// need to improve-  -1
 export const Projects = [
   {
     status: 1,
@@ -63,10 +63,9 @@ export const Projects = [
 export const skills = [
   ['Python', 1],
   ['JavaScript', 1],
-  ['Markdown', 1],
+  ['Nextjs', 1],
   ['React', 1],
   ['Expressjs', 1],
-  ['Nextjs', 1],
   ['AWS', 1],
   ['Tailwind', 1],
   ['C', 1],
