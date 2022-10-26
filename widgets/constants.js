@@ -83,8 +83,18 @@ export const skills = [
 
 export const WorkExp = [
   {
+    name: 'Seminar room',
+    start: 'September 2022',
+    end: 'October 2022',
+    position: 'Frontend Developer',
+    description:
+      'I was responsible for building the admin panel for their main website, which would help them to allot sessions.',
+    work: [{ name: 'Work cannot be made public', link: '#' }],
+    stack: ['Nextjs', 'Tailwind', 'Zustand'],
+  },
+  {
     name: 'Justbooks.in',
-    start: 'January 2022',
+    start: 'August 2022',
     end: 'May 2022',
     position: 'Frontend Developer Intern',
     description: 'I Revamped their website to a new one from scratch.',
