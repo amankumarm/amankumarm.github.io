@@ -34,7 +34,10 @@ function about() {
           </p>
         </div>
         <div className="flex  w-1/3 items-center justify-center">
-          <img src="/assets/images/prof.jpg " className="w-2/3 rounded-full shadow-lg" />
+          <img
+            src="/assets/images/prof.jpg "
+            className="w-2/3 rounded-full shadow-lg"
+          />
         </div>
       </div>
       <div className="ph:w-full ph:px-10 ">
@@ -71,7 +74,7 @@ function about() {
               {item.start} - {item.end}
             </p>
             <p className="py-1 text-sm text-gray-400">{item.description}</p>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-row gap-5 ">
               {item.work.map((i) => (
                 <a
                   href={i.link}
@@ -82,7 +85,8 @@ function about() {
                 </a>
               ))}
             </div>
-            <div className="flex flex-row gap-5">
+            <div className="flex flex-row flex-wrap gap-5 pt-4">
+              <span className="font-semibold underline">Tech Stack:</span>
               {
                 item.stack.map((i) => (
                   <span>{i}</span>
