@@ -83,6 +83,25 @@ export const skills = [
 
 export const WorkExp = [
   {
+    name: '6inc.co',
+    start: 'November 2022',
+    end: 'Current',
+    position: 'Frontend Developer',
+    description:
+      '6inc is a virtual incubator wherein students from different colleges with potential ideas for start-up can begin their journey and 6inc supports them by providing resources like mentors, connect them with interested investors, help them in hiring talent required etc.',
+    work: [{ name: '6inc.co', link: 'https://6inc.co' }],
+    stack: [
+      'Nextjs',
+      'Tailwind',
+      'Zustand',
+      'MongoDB',
+      'Firebase',
+      'Serverless functions',
+      'CI/CD',
+      'Cypress (Testing)',
+    ],
+  },
+  {
     name: 'Seminar room',
     start: 'September 2022',
     end: 'October 2022',
