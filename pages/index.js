@@ -9,7 +9,7 @@ function Index() {
           I'm Aman
         </p>
         <p className="text-sm leading-relaxed tracking-wider">
-          I'm Aman Kumar M , 20 years old and from India. building Web-apps has
+          I'm Aman Kumar M , 24 years old and from India. building Web-apps has
           been an interest of mine for many years. All the skills and tools I
           use, are self-taught over many years of practice and expanding my
           horizons.
