@@ -1,6 +1,4 @@
 import '../styles/globals.css'
-import Layout from '../components/Layout/index'
-import { Analytics } from '@vercel/analytics/next'
 
 function MyApp({ Component, pageProps }) {
   return (
