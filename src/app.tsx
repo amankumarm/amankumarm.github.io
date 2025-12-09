@@ -1,25 +1,12 @@
-import { Router } from "@solidjs/router";
-import { FileRoutes } from "@solidjs/start/router";
-import { Suspense } from "solid-js";
-import { Analytics } from "@vercel/analytics/solid";
-import Nav from "~/components/Nav";
-import "./app.css";
+import { useState } from "react";
+import "./App.css";
 
-export default function App() {
+function App() {
   return (
-    <>
-      <Router
-        root={(props) => (
-          <>
-            <Suspense>
-              <div class="flex h-svh items-center justify-center">
-                <p>Will be right back!!</p>
-              </div>
-            </Suspense>
-          </>
-        )}
-      ></Router>
-      <Analytics />
-    </>
+    <div className="h-svh flex items-center justify-center">
+      <p>Will be right back!!</p>
+    </div>
   );
 }
+
+export default App;
