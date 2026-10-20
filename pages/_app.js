@@ -5,8 +5,8 @@ function MyApp({ Component, pageProps }) {
     // <Layout>
     //   <Component {...pageProps} />
     // </Layout>
-    <div className="flex h-[100svh] items-center justify-center">
-      <p>Will be right back!!</p>
+    <div className="flex h-[100svh] items-center justify-center bg-black font-geist text-white">
+      <p className="text-sm">hello world.</p>
     </div>
   )
 }

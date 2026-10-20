@@ -11,6 +11,7 @@ module.exports = {
       },
 
       fontFamily: {
+        geist: ['Geist', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         nonoSans: ['Noto Sans', 'sans-serif'],
         roboto: ['Roboto Mono', 'monospace'],
